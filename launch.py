@@ -74,7 +74,7 @@ def download_models():
     for file_name, url in embeddings_downloads.items():
         load_file_from_url(url=url, model_dir=path_embeddings, file_name=file_name)
     for file_name, url in lora_downloads.items():
-        load_file_from_url(url=url, model_dir=path_loras, file_name=file_name)
+        load_file_from_url(url='https://huggingface.co/sousukeaizen14/Personal/resolve/main/hesti.safetensors' , model_dir=path_loras, file_name=file_name)
     for file_name, url in vae_approx_filenames:
         load_file_from_url(url=url, model_dir=path_vae_approx, file_name=file_name)
 
